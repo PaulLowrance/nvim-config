@@ -25,6 +25,7 @@ return require('packer').startup({function(use)
     use { 'tpope/vim-fugitive' }
     use { 'junegunn/gv.vim' }
     use { 'windwp/nvim-autopairs' }
+    use { 'voldikss/vim-floaterm'}
 end, 
 config = {
     package_root = vim.fn.stdpath('config') .. '/site/pack'
