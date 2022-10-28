@@ -29,9 +29,13 @@ map('n', '<S-l>', ':bn<CR>', default_opts)
 -- deletes buffer
 map('n', '<S-c>', ':bd<CR>', default_opts) 
 
+
+
 -- Toggle nvim-tree
 map('n', 'n', ':NvimTreeToggle<CR>', {})
 
+-- paste over text without yoinking it
+map("v", "p", '"_dP', default_opts)
 
 -- [[MANIPULATIONS]]
 

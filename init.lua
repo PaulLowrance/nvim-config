@@ -1,8 +1,14 @@
 --[[ init.lua ]]
 --
+local opt = vim.opt
+local g = vim.g
+local api = vim.api
+
 --LEADER
-vim.g.mapleader = " "
-vim.g.localleader = "\\"
+g.mapleader = " "
+g.localleader = " "
+
+opt.timeoutlen = 300 --Time in milliseconds to wait on a comman to complete
 
 -- IMPORTS
 require('vars') --variables
