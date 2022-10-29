@@ -37,4 +37,14 @@ opt.splitright = true
 opt.splitbelow = true
 
 --[[ The clipboard ]]
-opt.clipboard = 'unnamedplus'        --So important in todays developement environment
+opt.clipboard = "unnamedplus"        --So important in todays developement environment
+opt.timeoutlen = 300 --Time in milliseconds to wait on a comman to complete
+
+
+-- Highlight on Yoink
+vim.cmd [[
+    augroup YankHighlight
+        autocmd!
+        autocmd TextYankPost * silent! lua vim.highlight.on_yank()
+    augroup end
+]]
