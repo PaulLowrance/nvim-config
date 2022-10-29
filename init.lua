@@ -8,7 +8,6 @@ local api = vim.api
 g.mapleader = " "
 g.localleader = " "
 
-opt.timeoutlen = 300 --Time in milliseconds to wait on a comman to complete
 
 -- IMPORTS
 require('vars') --variables
